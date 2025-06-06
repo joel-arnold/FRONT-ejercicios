@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países de Habla Hispana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🌍 Países de Habla Hispana</h1>
+        <p>Explorando naciones donde el español es idioma oficial</p>
+    </header>
+
+    <main class="main">
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Cargando países...</p>
+        </div>
+        
+        <div class="error-message" id="error-message" style="display: none;">
+            <p>❌ Error al cargar los datos. Por favor, intenta de nuevo.</p>
+            <button id="retry-btn">Reintentar</button>
+        </div>
+        
+        <div class="countries-container" id="countries-container">
+            <!-- Los países se cargarán aquí dinámicamente -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Datos obtenidos de <a href="https://restcountries.com/" target="_blank">REST Countries API</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

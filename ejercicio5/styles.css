@@ -1,0 +1,159 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.calculator {
+    margin-bottom: 2rem;
+}
+
+.display {
+    margin-bottom: 1rem;
+}
+
+/* ERROR 1: Selector incorrecto - falta el # para el ID */
+resultado {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: right;
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    background: #f8f9fa;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+/* ERROR 2: Selector mal escrito */
+.buttons buton {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.operator {
+    background: #667eea !important;
+    color: white !important;
+}
+
+.equals {
+    background: #ff6b6b !important;
+    color: white !important;
+    grid-row: span 2;
+}
+
+/* ERROR 3: Propiedad CSS inexistente */
+.zero {
+    grid-column: span 2;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.historial {
+    border-top: 2px solid #667eea;
+    padding-top: 1rem;
+}
+
+.historial h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ERROR 4: Selector con typo */
+#lista-historal {
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+#lista-historial li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    font-family: monospace;
+}
+
+#lista-historial li:last-child {
+    border-bottom: none;
+}
+
+/* ERROR 5: Falta el punto para indicar clase */
+historial button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.historial button:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .buttons button {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+}
