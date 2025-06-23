@@ -62,22 +62,23 @@ front-ejercicios/
 ### Opción 1: Abrir directamente
 1. Navega a la carpeta del ejercicio que quieras probar
 2. Abre el archivo `index.html` en tu navegador
-3. ¡Listo! Ya puedes ver el ejercicio funcionando
+3. ¡Listo! Ya podés ver el ejercicio funcionando
 
-### Opción 2: Servidor local (recomendado)
-```bash
-# Desde la carpeta raíz del proyecto
-python -m http.server 8000
-# o si tienes Node.js
-npx http-server
-
-# Luego ve a http://localhost:8000/ejercicioX/
-```
-
-### Opción 3: Live Server (VS Code)
+### Opción 2: Live Server (VS Code)
 1. Instala la extensión "Live Server" en VS Code
 2. Haz clic derecho en cualquier archivo `index.html`
 3. Selecciona "Open with Live Server"
+4. Dirigirse a http://localhost:5000/ejercicioX
+
+### Opción 3: Servidor local
+```bash
+# Con Node.js:
+npx http-server
+# Otra alternativa, desde la carpeta raíz del proyecto:
+python -m http.server 8080
+
+# Después dirigirse a http://localhost:8080/ejercicioX
+```
 
 ## 🔧 Para el Ejercicio 5 (Debugging)
 

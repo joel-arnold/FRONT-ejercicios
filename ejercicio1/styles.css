@@ -14,7 +14,7 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(180deg, hsl(189, 100%, 48%) 0%, #043058 100%);
     color: white;
     padding: 2rem 1rem;
     text-align: center;
@@ -53,14 +53,14 @@ body {
 }
 
 /* Sections */
-.about-section, .skills-section {
+.about-section, .skills-section, .hobbies-section {
     background: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
-.about-section h2, .skills-section h2 {
+.about-section h2, .skills-section h2, .hobbies-section h2 {
     color: #667eea;
     margin-bottom: 1rem;
     font-size: 1.5rem;
@@ -68,7 +68,7 @@ body {
     padding-bottom: 0.5rem;
 }
 
-.about-section p {
+.about-section p {  
     text-align: justify;
     line-height: 1.8;
     color: #555;
@@ -91,7 +91,24 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-item:hover {
+/* Hobbies */
+.hobbies-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hobby-item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-item:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
 }
